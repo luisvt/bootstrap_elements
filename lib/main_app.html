@@ -8,10 +8,49 @@
 
 <link rel="import" href="../../packages/bootstrap_elements/bstrp_alert/bstrp_alert.html">
 <link rel="import" href="../../packages/bootstrap_elements/bstrp_breadcrumb/bstrp_breadcrumb.html">
+<link rel="import" href="../../packages/bootstrap_elements/bstrp_button/bstrp_button.html">
 
 <polymer-element name="main-app">
   <template>
+    <style>
+      div {
+        margin: 30px 0;
+      }
+      bstrp-button {
+        margin: 10px;
+      }
+    </style>
     <h1>Buttons</h1>
+    <div>
+      <bstrp-button icon="star" label="Star" lg></bstrp-button>
+      <bstrp-button icon="star" label="Star" ></bstrp-button>
+      <bstrp-button icon="star" label="Star" sm></bstrp-button>
+      <bstrp-button icon="star" label="Star" xs></bstrp-button>
+    </div>
+    <div>
+      <bstrp-button icon="star" label="Star" success lg></bstrp-button>
+      <bstrp-button icon="star" label="Star" success></bstrp-button>
+      <bstrp-button icon="star" label="Star" success sm></bstrp-button>
+      <bstrp-button icon="star" label="Star" success xs></bstrp-button>
+    </div>
+    <div>
+      <bstrp-button icon="star" label="Star" info lg></bstrp-button>
+      <bstrp-button icon="star" label="Star" info></bstrp-button>
+      <bstrp-button icon="star" label="Star" info sm></bstrp-button>
+      <bstrp-button icon="star" label="Star" info xs></bstrp-button>
+    </div>
+    <div>
+      <bstrp-button icon="star" label="Star" warning lg></bstrp-button>
+      <bstrp-button icon="star" label="Star" warning ></bstrp-button>
+      <bstrp-button icon="star" label="Star" warning sm></bstrp-button>
+      <bstrp-button icon="star" label="Star" warning xs></bstrp-button>
+    </div>
+    <div>
+      <bstrp-button icon="star" label="Star" danger lg></bstrp-button>
+      <bstrp-button icon="star" label="Star" danger ></bstrp-button>
+      <bstrp-button icon="star" label="Star" danger sm></bstrp-button>
+      <bstrp-button icon="star" label="Star" danger xs></bstrp-button>
+    </div>
   
     <h1>Alerts</h1>
     <bstrp-alert success dismissible>
@@ -23,6 +62,7 @@
     <bstrp-alert info>Well done! You successfully read this important alert message. </bstrp-alert>
     <bstrp-alert warning>Well done! You successfully read this important alert message. </bstrp-alert>
     <bstrp-alert danger>Well done! You successfully read this important alert message. </bstrp-alert>
+    
     
     <h1>BreadCrumbs</h1> 
     <bstrp-breadcrumb>
