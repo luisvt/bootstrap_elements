@@ -6,21 +6,32 @@
 <!-- import polymer-element's definition -->
 <link rel="import" href="../../packages/polymer/polymer.html">
 
-<link rel="import" href="../../packages/paper_elements/paper_input.html">
+<link rel="import" href="../../packages/bootstrap_elements/bstrp_alert/bstrp_alert.html">
+<link rel="import" href="../../packages/bootstrap_elements/bstrp_breadcrumb/bstrp_breadcrumb.html">
 
 <polymer-element name="main-app">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-
-    <paper-input label="Type something..." on-keyup="{{reverseText}}"></paper-input>
-
-    <p>
-      Reversed: {{ reversed }}
-    </p>
+    <h1>Buttons</h1>
+  
+    <h1>Alerts</h1>
+    <bstrp-alert success dismissible>
+      <h4>This is a title</h4>
+      Well done! You successfully read this important alert message.
+      <p> this is a paragraph </p>
+      <a href="#">this is a link</a>
+    </bstrp-alert>
+    <bstrp-alert info>Well done! You successfully read this important alert message. </bstrp-alert>
+    <bstrp-alert warning>Well done! You successfully read this important alert message. </bstrp-alert>
+    <bstrp-alert danger>Well done! You successfully read this important alert message. </bstrp-alert>
+    
+    <h1>BreadCrumbs</h1> 
+    <bstrp-breadcrumb>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Library</a></li>
+      <li class="active">Data</li>
+    </bstrp-breadcrumb>
+    
+    
   </template>
   <script type="application/dart" src="main_app.dart"></script>
 </polymer-element>
