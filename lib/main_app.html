@@ -6,70 +6,106 @@
 <!-- import polymer-element's definition -->
 <link rel="import" href="../../packages/polymer/polymer.html">
 
-<link rel="import" href="../../packages/bootstrap_elements/bstrp_alert/bstrp_alert.html">
-<link rel="import" href="../../packages/bootstrap_elements/bstrp_breadcrumb/bstrp_breadcrumb.html">
-<link rel="import" href="../../packages/bootstrap_elements/bstrp_button/bstrp_button.html">
+<link rel="import" href="../../packages/bootstrap_elements/bs_alert/bs_alert.html">
+<link rel="import" href="../../packages/bootstrap_elements/bs_breadcrumb/bs_breadcrumb.html">
+<link rel="import" href="../../packages/bootstrap_elements/bs_btn_group/bs_btn_group.html"/>
+<link rel="import" href="../../packages/bootstrap_elements/bs_btn_toolbar/bs_btn_toolbar.html"/>
 
 <polymer-element name="main-app">
   <template>
     <style>
-      div {
-        margin: 30px 0;
-      }
-      bstrp-button {
-        margin: 10px;
-      }
     </style>
     <h1>Buttons</h1>
+    <h2>Default</h2>
     <div>
-      <bstrp-button icon="star" label="Star" lg></bstrp-button>
-      <bstrp-button icon="star" label="Star" ></bstrp-button>
-      <bstrp-button icon="star" label="Star" sm></bstrp-button>
-      <bstrp-button icon="star" label="Star" xs></bstrp-button>
+      <button lg><core-icon icon="star"></core-icon>Star</button>
+      <button><core-icon icon="star"></core-icon>Star</button>
+      <button sm><core-icon icon="star"></core-icon>Star</button>
+      <button xs><core-icon icon="star"></core-icon>Star</button>
+    </div>
+    <h2>Primary</h2>
+    <div>
+      <button primary lg><core-icon icon="star"></core-icon>Star</button>
+      <button primary><core-icon icon="star"></core-icon>Star</button>
+      <button primary sm><core-icon icon="star"></core-icon>Star</button>
+      <button primary xs><core-icon icon="star"></core-icon>Star</button>
+    </div>
+    <h2>Success</h2>
+    <div>
+      <button success lg><core-icon icon="star"></core-icon>Star</button>
+      <button success><core-icon icon="star"></core-icon>Star</button>
+      <button success sm><core-icon icon="star"></core-icon>Star</button>
+      <button success xs><core-icon icon="star"></core-icon>Star</button>
+    </div>
+    <h2>Info</h2>
+    <div>
+      <button info lg><core-icon icon="star"></core-icon>Star</button>
+      <button info><core-icon icon="star"></core-icon>Star</button>
+      <button info sm><core-icon icon="star"></core-icon>Star</button>
+      <button info xs><core-icon icon="star"></core-icon>Star</button>
+    </div>
+    <h2>Warning</h2>
+    <div>
+      <button warning lg><core-icon icon="star"></core-icon>Star</button>
+      <button warning><core-icon icon="star"></core-icon>Star</button>
+      <button warning sm><core-icon icon="star"></core-icon>Star</button>
+      <button warning xs><core-icon icon="star"></core-icon>Star</button>
+    </div>
+    <h2>Danger</h2>
+    <div>
+      <button danger lg><core-icon icon="star"></core-icon>Star</button>
+      <button danger><core-icon icon="star"></core-icon>Star</button>
+      <button danger sm><core-icon icon="star"></core-icon>Star</button>
+      <button danger xs><core-icon icon="star"></core-icon>Star</button>
+    </div>
+    <button block>Star</button>
+    <button block danger>Star</button>
+    
+    <h1>Button Groups</h1>
+    <div>
+      <bs-btn-group>
+        <button>First</button>
+        <button>Second</button>
+        <button>third</button>
+      </bs-btn-group>
     </div>
     <div>
-      <bstrp-button icon="star" label="Star" success lg></bstrp-button>
-      <bstrp-button icon="star" label="Star" success></bstrp-button>
-      <bstrp-button icon="star" label="Star" success sm></bstrp-button>
-      <bstrp-button icon="star" label="Star" success xs></bstrp-button>
-    </div>
-    <div>
-      <bstrp-button icon="star" label="Star" info lg></bstrp-button>
-      <bstrp-button icon="star" label="Star" info></bstrp-button>
-      <bstrp-button icon="star" label="Star" info sm></bstrp-button>
-      <bstrp-button icon="star" label="Star" info xs></bstrp-button>
-    </div>
-    <div>
-      <bstrp-button icon="star" label="Star" warning lg></bstrp-button>
-      <bstrp-button icon="star" label="Star" warning ></bstrp-button>
-      <bstrp-button icon="star" label="Star" warning sm></bstrp-button>
-      <bstrp-button icon="star" label="Star" warning xs></bstrp-button>
-    </div>
-    <div>
-      <bstrp-button icon="star" label="Star" danger lg></bstrp-button>
-      <bstrp-button icon="star" label="Star" danger ></bstrp-button>
-      <bstrp-button icon="star" label="Star" danger sm></bstrp-button>
-      <bstrp-button icon="star" label="Star" danger xs></bstrp-button>
+      <bs-btn-toolbar role="toolbar" aria-label="Toolbar with button groups">
+        <bs-btn-group role="group" aria-label="First group">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+        </bs-btn-group>
+        <bs-btn-group role="group" aria-label="Second group">
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+        </bs-btn-group>
+        <bs-btn-group role="group" aria-label="Third group">
+          <button>8</button>
+        </bs-btn-group>
+      </bs-btn-toolbar>
     </div>
   
     <h1>Alerts</h1>
-    <bstrp-alert success dismissible>
+    <bs-alert success dismissible>
       <h4>This is a title</h4>
       Well done! You successfully read this important alert message.
       <p> this is a paragraph </p>
       <a href="#">this is a link</a>
-    </bstrp-alert>
-    <bstrp-alert info>Well done! You successfully read this important alert message. </bstrp-alert>
-    <bstrp-alert warning>Well done! You successfully read this important alert message. </bstrp-alert>
-    <bstrp-alert danger>Well done! You successfully read this important alert message. </bstrp-alert>
+    </bs-alert>
+    <bs-alert info>Well done! You successfully read this important alert message. </bs-alert>
+    <bs-alert warning>Well done! You successfully read this important alert message. </bs-alert>
+    <bs-alert danger>Well done! You successfully read this important alert message. </bs-alert>
     
     
     <h1>BreadCrumbs</h1> 
-    <bstrp-breadcrumb>
+    <bs-breadcrumb>
       <li><a href="#">Home</a></li>
       <li><a href="#">Library</a></li>
       <li class="active">Data</li>
-    </bstrp-breadcrumb>
+    </bs-breadcrumb>
     
     
   </template>

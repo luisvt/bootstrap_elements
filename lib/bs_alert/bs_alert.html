@@ -8,10 +8,13 @@
 <link rel="import" href="../../../packages/core_elements/core_icon.html">
 <link rel="import" href="../../../packages/core_elements/core_icons.html">
 
-<polymer-element name="bstrp-button">
+<polymer-element name="bs-alert" >
   <template>
-    <core-icon icon="{{icon}}"></core-icon>
-    {{label}}
+<!--     <link rel="stylesheet" type="text/css" href="bstrp_alert.css"> -->
+    <template if="{{dismissible}}">
+      <core-icon icon="close" on-tap="{{remove}}"></core-icon>
+    </template>
+    <content></content>
   </template>
-  <script type="application/dart" src="bstrp_button.dart"></script>
+  <script type="application/dart" src="bs_alert.dart"></script>
 </polymer-element>

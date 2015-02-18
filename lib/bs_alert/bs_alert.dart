@@ -4,10 +4,10 @@
 import 'package:polymer/polymer.dart';
 
 /// A Polymer `<bstrp-alert>` element.
-@CustomTag('bstrp-alert')
-class BstrpAlert extends PolymerElement {
+@CustomTag('bs-alert')
+class BsAlert extends PolymerElement {
   /// Constructor used to create instance of Bstrp_alert.
-  BstrpAlert.created() : super.created();
+  BsAlert.created() : super.created();
   
   @published bool dismissible;
 }

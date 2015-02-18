@@ -5,7 +5,9 @@ environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
   browser: any
-  less_dart: any
+  #less_node: any
+  less_dart:
+    path: /home/luis/git/less_dart
   paper_elements: '>=0.6.1 <0.7.0'
   polymer: '>=0.15.4 <0.16.0'
 transformers:
