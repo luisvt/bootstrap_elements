@@ -3,6 +3,8 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
+@import '../variables.less';
+
 .button-variant(@color; @background; @border) {
   color: @color;
   background-color: @background;
@@ -37,7 +39,7 @@
     }
   }
 
-  .badge {
+  bs-badge {
     color: @background;
     background-color: @color;
   }
@@ -50,7 +52,7 @@
   line-height: @line-height;
   border-radius: @border-radius;
   
-  /deep/ core-icon {
+  @{deep} core-icon {
     height: @font-size * 1.33;
     width: @font-size * 1.33;
   }

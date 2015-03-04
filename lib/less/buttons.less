@@ -2,11 +2,16 @@
 // Buttons
 // --------------------------------------------------
 
+@import 'variables.less';
+@import 'mixins/buttons.less';
+@import 'mixins/vendor-prefixes.less';
+@import 'mixins/tab-focus.less';
+@import 'mixins/opacity.less';
 
 // Base styles
 // --------------------------------------------------
 
-html /deep/ button {
+html @{deep} button {
   display: binline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;

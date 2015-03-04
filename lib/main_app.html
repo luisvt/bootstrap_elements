@@ -10,11 +10,10 @@
 <link rel="import" href="../../packages/bootstrap_elements/bs_breadcrumb/bs_breadcrumb.html">
 <link rel="import" href="../../packages/bootstrap_elements/bs_btn_group/bs_btn_group.html"/>
 <link rel="import" href="../../packages/bootstrap_elements/bs_btn_toolbar/bs_btn_toolbar.html"/>
+<link rel="import" href="../../packages/bootstrap_elements/bs_badge/bs_badge.html"/>
 
 <polymer-element name="main-app">
   <template>
-    <style>
-    </style>
     <h1>Buttons</h1>
     <h2>Default</h2>
     <div>
@@ -63,7 +62,7 @@
     
     <h1>Button Groups</h1>
     <div>
-      <bs-btn-group>
+      <bs-btn-group vertical>
         <button>First</button>
         <button>Second</button>
         <button>third</button>
@@ -107,7 +106,30 @@
       <li class="active">Data</li>
     </bs-breadcrumb>
     
+    <h1>Badges</h1>
+    <a href="#">Inbox <bs-badge>42</bs-badge></a>
+
+    <button>Messages <bs-badge>4</bs-badge></button>
+    <button primary>Messages <bs-badge>4</bs-badge></button>
+    <button success>Messages <bs-badge>4</bs-badge></button>
+    <button info>Messages <bs-badge>4</bs-badge></button>
+    <button warning>Messages <bs-badge>4</bs-badge></button>
+    <button danger>Messages <bs-badge>4</bs-badge></button>
     
+    <h1>Code</h1>
+    <p><code>&lt;header&gt;</code> is wrapped as an inline element.</p>
+		<p>To display code as a standalone block element use &lt;pre&gt; tag as:
+		<pre>
+&lt;article&gt;
+   &lt;h1&gt;Article Heading&lt;/h1&gt;
+&lt;/article&gt;</pre>
+  
+	  <h1>Keyboard Inputs</h1>
+	  <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+	  <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+	  
+	  <h1>Dropdowns</h1>
+	  <button class="dropdown-toggle">Dropdwon <span class="caret"></span></button>
   </template>
   <script type="application/dart" src="main_app.dart"></script>
 </polymer-element>

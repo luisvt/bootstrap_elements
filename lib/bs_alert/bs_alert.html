@@ -10,9 +10,8 @@
 
 <polymer-element name="bs-alert" >
   <template>
-<!--     <link rel="stylesheet" type="text/css" href="bstrp_alert.css"> -->
     <template if="{{dismissible}}">
-      <core-icon icon="close" on-tap="{{remove}}"></core-icon>
+      <button class="close" on-tap="{{remove}}">×</button>
     </template>
     <content></content>
   </template>

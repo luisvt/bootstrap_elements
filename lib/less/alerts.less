@@ -4,10 +4,11 @@
  
 // Base styles
 // -------------------------
-//@import "variables.less";
-//@import "mixins/alerts.less";
+@import 'variables.less';
+@import 'mixins/alerts.less';
+@import 'mixins/opacity.less';
 
-html /deep/ bs-alert {
+html @{deep} bs-alert { 
   display: block;
   padding: @alert-padding;
   margin-bottom: @line-height-computed;
@@ -42,15 +43,14 @@ html /deep/ bs-alert {
   
   &[dismissible] {
     padding-right: (@alert-padding + 20);
-    position: relative;
+//    position: relative;
   
     // Adjust close link position
-    /deep/ core-icon {
-      position: absolute;
-      top: 10px;
-      right: 10px;
+    @{deep} .close {
+      position: relative;
+      top: -2px;
+      right: -21px;
       color: inherit;
-      cursor: pointer;
     }
   }
   
